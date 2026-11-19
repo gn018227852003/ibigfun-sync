@@ -20,11 +20,11 @@ try:
 
         try:
             page.goto(URL, wait_until="domcontentloaded", timeout=30000)
-        except Exception as nav_err:
-            print("Goto warning:", nav_err)
+        except Exception as e:
+            print("Goto warning:", e)
 
-        # 給頁面時間跑驗證與動態渲染，不死等 networkidle
         page.wait_for_timeout(8000)
+        print("Page title:", page.title())
 
         for _ in range(4):
             try:
@@ -33,22 +33,20 @@ try:
             except Exception:
                 break
 
+        links = page.query_selector_all("a[href]")
+        print("Total links:", len(links))
+
         seen = set()
-        for a in page.query_selector_all("a[href]"):
+        for a in links:
             try:
                 href = urljoin(URL, a.get_attribute("href") or "")
-                if not href or href == URL or "ibigfun.com" not in href or href in seen:
+                if not href or href == URL or href in seen:
                     continue
 
-                img = a.query_selector("img") or a.evaluate_handle(
-                    "el => (el.closest('div, li, article') || el).querySelector('img')"
-                ).as_element()
-                src = urljoin(URL, img.get_attribute("src") or img.get_attribute("data-src") or "") if img else ""
-                if not src or src.startswith("data:"):
-                    continue
-
-                text = a.evaluate("el => (el.closest('div, li, article') || el).innerText") or ""
-                lines = [l.strip() for l in text.splitlines() if l.strip()]
+                text = (a.inner_text() or "").strip()
+                parent_text = (a.evaluate("el => (el.closest('div, li, article, section') || el).innerText") or "").strip()
+                combined = parent_text if len(parent_text) > len(text) else text
+                lines = [l.strip() for l in combined.splitlines() if l.strip()]
                 if not lines:
                     continue
 
@@ -56,12 +54,22 @@ try:
                 if any(w in title.lower() for w in ["just a moment", "captcha", "cloudflare", "checking your browser"]):
                     continue
 
-                price_m = re.search(r"([\d,]+)\s*萬", text)
-                ping_m = re.search(r"([\d.]+)\s*坪", text)
+                img = a.query_selector("img") or a.evaluate_handle(
+                    "el => (el.closest('div, li, article, section') || el).querySelector('img')"
+                ).as_element()
+                src = urljoin(URL, img.get_attribute("src") or img.get_attribute("data-src") or "") if img else ""
+                if src.startswith("data:"):
+                    src = ""
+
+                price_m = re.search(r"([\d,]+)\s*萬", combined)
+                ping_m = re.search(r"([\d.]+)\s*坪", combined)
+                if not price_m and not ping_m and "/pages/" not in href and "/house" not in href and "/item" not in href:
+                    continue
+
                 cat = (
                     "土地廠房"
-                    if any(k in title for k in ["地", "廠", "建地", "農地"])
-                    else ("透天" if any(k in title for k in ["透天", "別墅"]) else "住宅")
+                    if any(k in combined for k in ["地", "廠", "建地", "農地"])
+                    else ("透天" if any(k in combined for k in ["透天", "別墅"]) else "住宅")
                 )
 
                 seen.add(href)
@@ -82,8 +90,7 @@ try:
 except Exception as e:
     print("Playwright error:", e)
 
-# 確保檔案必定存在，避免後續 git add 找不到檔案而 exit code 1
 with open("listings.json", "w", encoding="utf-8") as f:
     json.dump(items, f, ensure_ascii=False, indent=2)
 
-print(f"Done. Total items: {len(items)}")
+print(f"Saved listings.json with {len(items)} items.")
