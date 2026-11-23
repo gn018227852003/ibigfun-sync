@@ -46,7 +46,7 @@
     "price": 1698,
     "totalPing": 74.39,
     "url": "https://www.ibigfun.com/pages/house/0906771994/52f7b637-e2cf-11f1-a9c2-0a84bab091bd?htype=false&tags=Miaoli%20County,Toufen%20City,townhouse,price2000,room4plus,--",
-    "img": "https://www.ibigfun.com/Redirect?l=https%3A%2F%2Fyccdn.yungching.com.tw%2Fv1%2Fimage%2F%3Fkey%3DNF58Ko5oaCv4_f-Rmk7538p0dEdAlNV8zb8HqqSDahktWdU2ntZgMl4l0RPr6CY2qVhtUUJ4lA_cF1mBh5MY1RWd5eEaa7mn9qxu8f6s-rtKfVoBsurTgAnsNQ3b1ueVZBTVyE902uGua3iB7hgAAKPHTL2hxmCpYvJvW1CAemDnYnc5rlQbkFlxKzOddph2lckgJWQKtaPidrW-SgVAJ0q8fIjcFGU-hQFGymqo8g21doSW1ZZihP_njpYuw4Qn_YBLfeWr_74kaO5NrdDOIQ%26width%3D1024%26height%3D768",
+    "img": "https://www.ibigfun.com/Redirect?l=https%3A%2F%2Fyccdn.yungching.com.tw%2Fv1%2Fimage%2F%3Fkey%3DNF58Ko5oaCtNxJBVQihfXwQE7J-UWxVvKHn0v7HKYomz-3fHVrBVzwFGN1vehbkVqVhtUUJ4lA_cF1mBh5MY1RWd5eEaa7mn9qxu8f6s-rtKfVoBsurTgAnsNQ3b1ueVZBTVyE902uGua3iB7hgAAKPHTL2hxmCpYvJvW1CAemDnYnc5rlQbkFlxKzOddph2lckgJWQKtaPidrW-SgVAJ0q8fIjcFGU-hQFGymqo8g21doSW1ZZihP_njpYuw4Qn_YBLfeWr_74kaO5NrdDOIQ%26width%3D1024%26height%3D768",
     "feature": "苗栗縣頭份市信義路｜5房2廳3衛｜74.39坪"
   },
   {
@@ -1133,7 +1133,7 @@
     "id": 114,
     "category": "住宅",
     "title": "竹南｜質感採光三房｜平車｜免整理直接住",
-    "price": 1388,
+    "price": 1180,
     "totalPing": 41.36,
     "url": "https://www.ibigfun.com/pages/house/0906771994/bb657c55-8a13-11f1-b7b8-0a84bab091bd?htype=false&tags=Miaoli%20County,Zhunan%20Township,building,price1500,room3,--",
     "img": "https://www.ibigfun.com/Redirect?l=https%3A%2F%2Fyccdn.yungching.com.tw%2Fv1%2Fimage%2F%3Fkey%3DNF58Ko5oaCtMlTfYpw9gTQbUq2A8xcxc49mDi3NkbV5AsANK7jU3RqSPxCdoZkcFqVhtUUJ4lA_cF1mBh5MY1RWd5eEaa7mn9qxu8f6s-rtKfVoBsurTgAnsNQ3b1ueVZBTVyE902uGua3iB7hgAAKPHTL2hxmCpYvJvW1CAemDnYnc5rlQbkFlxKzOddph2lckgJWQKtaPidrW-SgVAJ0q8fIjcFGU-hQFGymqo8g21doSW1ZZihP_njpYuw4Qn_YBLfeWr_74kaO5NrdDOIQ%26width%3D1024%26height%3D768",
@@ -1881,16 +1881,6 @@
   },
   {
     "id": 189,
-    "category": "透天",
-    "title": "【大埔台積電旁】頂規《日頭花》邊間庭院雙車美墅",
-    "price": 2988,
-    "totalPing": 67.74,
-    "url": "https://www.ibigfun.com/pages/house/0906771994/c4cf809f-5d59-11f1-be8e-0a84bab091bd?htype=false&tags=Miaoli%20County,Zhunan%20Township,townhouse,price4000,room4,--",
-    "img": "https://www.ibigfun.com/Redirect?l=https%3A%2F%2Fyccdn.yungching.com.tw%2Fv1%2Fimage%2F%3Fkey%3DNF58Ko5oaCtOeTVMQFfCPEaAB-dub8_YDmCtazyp69p55_Gt0ADf93h4ZAqL1U-aqVhtUUJ4lA_cF1mBh5MY1RWd5eEaa7mn9qxu8f6s-rtKfVoBsurTgAnsNQ3b1ueVZBTVyE902uGua3iB7hgAAKPHTL2hxmCpYvJvW1CAemDnYnc5rlQbkFlxKzOddph2lckgJWQKtaPidrW-SgVAJ0q8fIjcFGU-hQFGymqo8g21doSW1ZZihP_njpYuw4QnprJ-indaUcKBd9hk8aZg8MnUezEOQMv6i9KPzq5D21B8MW899PE8ynnpmkhF_dmrIO2l_YXPGQr925gg1d9mkG3RFRGXpmVP%26width%3D1024%26height%3D768",
-    "feature": "苗栗縣竹南鎮仁愛路｜4房2廳4衛｜67.74坪"
-  },
-  {
-    "id": 190,
     "category": "土地廠房",
     "title": "【山林與畫布的對話】南庄秘境渡假木屋",
     "price": 1680,
@@ -1900,7 +1890,7 @@
     "feature": "苗栗縣南庄鄉四灣段｜土地｜482.18坪"
   },
   {
-    "id": 191,
+    "id": 190,
     "category": "住宅",
     "title": "竹南市區大坪數4房無敵海景戶",
     "price": 1398,
@@ -1910,7 +1900,7 @@
     "feature": "苗栗縣竹南鎮文林街｜4房2廳1衛｜85.07坪"
   },
   {
-    "id": 192,
+    "id": 191,
     "category": "土地廠房",
     "title": "【慢活·拾光】通霄北勢窩綠色夢想地",
     "price": 888,
@@ -1920,7 +1910,7 @@
     "feature": "苗栗縣通霄鎮北勢窩段｜土地｜3037.4坪"
   },
   {
-    "id": 193,
+    "id": 192,
     "category": "透天",
     "title": "監理站旁｜孝親房｜前停透天",
     "price": 1088,
@@ -1930,7 +1920,7 @@
     "feature": "苗栗縣苗栗市至公路｜5房2廳3衛｜51.61坪"
   },
   {
-    "id": 194,
+    "id": 193,
     "category": "住宅",
     "title": "【築南大院】明星學區＿全新三房平車",
     "price": 1798,
@@ -1940,7 +1930,7 @@
     "feature": "苗栗縣竹南鎮光復路｜3房2廳2衛｜44.52坪"
   },
   {
-    "id": 195,
+    "id": 194,
     "category": "土地廠房",
     "title": "峨眉正路旁丙建",
     "price": 568,
@@ -1950,7 +1940,7 @@
     "feature": "新竹縣峨眉鄉富農段｜土地｜29.71坪"
   },
   {
-    "id": 196,
+    "id": 195,
     "category": "土地廠房",
     "title": "新竹橫山｜便宜休閒林地",
     "price": 370,
@@ -1960,7 +1950,7 @@
     "feature": "新竹縣橫山鄉下大窩段｜土地｜1485.34坪"
   },
   {
-    "id": 197,
+    "id": 196,
     "category": "土地廠房",
     "title": "近峨眉湖大坪數丙建+農地",
     "price": 13598,
@@ -1970,7 +1960,7 @@
     "feature": "新竹縣峨眉鄉富農段｜土地｜1522.95坪"
   },
   {
-    "id": 198,
+    "id": 197,
     "category": "土地廠房",
     "title": "頭份｜低總價｜美農地",
     "price": 400,
@@ -1980,7 +1970,7 @@
     "feature": "苗栗縣頭份市藤坪段｜土地｜411.17坪"
   },
   {
-    "id": 199,
+    "id": 198,
     "category": "土地廠房",
     "title": "公館交流道｜合法挑高｜綠能鋼構廠房｜",
     "price": 14000,
@@ -1990,7 +1980,7 @@
     "feature": "苗栗縣公館鄉｜開放空間｜386.33坪"
   },
   {
-    "id": 200,
+    "id": 199,
     "category": "土地廠房",
     "title": "公館交流道｜方正大面寬｜乙種工業用地",
     "price": 5188,
@@ -2000,7 +1990,7 @@
     "feature": "苗栗縣公館鄉五谷岡段｜土地｜295.54坪"
   },
   {
-    "id": 201,
+    "id": 200,
     "category": "透天",
     "title": "造橋低總價買地送屋",
     "price": 288,
@@ -2010,7 +2000,7 @@
     "feature": "苗栗縣造橋鄉｜開放空間｜31.54坪"
   },
   {
-    "id": 202,
+    "id": 201,
     "category": "住宅",
     "title": "漫步雲端｜花園造鎮｜雲天生活｜兩房平車",
     "price": 798,
@@ -2020,7 +2010,7 @@
     "feature": "苗栗縣頭份市花園東路｜2房2廳2衛｜40.09坪"
   },
   {
-    "id": 203,
+    "id": 202,
     "category": "土地廠房",
     "title": "竹南核心＿黃金方正＿乙種工業地Ｂ",
     "price": 5220,
@@ -2030,7 +2020,7 @@
     "feature": "苗栗縣竹南鎮延平段｜土地｜186.47坪"
   },
   {
-    "id": 204,
+    "id": 203,
     "category": "土地廠房",
     "title": "竹南核心＿黃金方正＿乙種工業地C",
     "price": 3730,
@@ -2040,7 +2030,7 @@
     "feature": "苗栗縣竹南鎮延平段｜土地｜186.47坪"
   },
   {
-    "id": 205,
+    "id": 204,
     "category": "土地廠房",
     "title": "竹南核心＿黃金方正＿乙種工業地Ａ",
     "price": 5220,
@@ -2050,7 +2040,7 @@
     "feature": "苗栗縣竹南鎮延平段｜土地｜186.46坪"
   },
   {
-    "id": 206,
+    "id": 205,
     "category": "土地廠房",
     "title": "高CP值—龍天段—乙種工業用地",
     "price": 3959,
@@ -2060,7 +2050,7 @@
     "feature": "苗栗縣竹南鎮龍天段｜土地｜247.43坪"
   },
   {
-    "id": 207,
+    "id": 206,
     "category": "土地廠房",
     "title": "苑裡乙工｜臨8米路｜大車好進出｜設廠首選",
     "price": 8800,
@@ -2070,7 +2060,7 @@
     "feature": "苗栗縣苑裡鎮苑北段｜土地｜677.86坪"
   },
   {
-    "id": 208,
+    "id": 207,
     "category": "透天",
     "title": "布查花園寬敞大坪數社區美墅",
     "price": 2388,
@@ -2080,7 +2070,7 @@
     "feature": "苗栗縣竹南鎮龍山路二段｜4房3廳5衛｜86.96坪"
   },
   {
-    "id": 209,
+    "id": 208,
     "category": "住宅",
     "title": "育達小資投資套房",
     "price": 138,
@@ -2090,7 +2080,7 @@
     "feature": "苗栗縣造橋鄉育英街｜1房1衛｜6.28坪"
   },
   {
-    "id": 210,
+    "id": 209,
     "category": "透天",
     "title": "竹南低總價整新透天",
     "price": 850,
@@ -2100,7 +2090,7 @@
     "feature": "苗栗縣竹南鎮復興路｜5房3廳6衛｜34.85坪"
   },
   {
-    "id": 211,
+    "id": 210,
     "category": "土地廠房",
     "title": "【耕讀農莊】大地坪休閒度假木屋",
     "price": 698,
@@ -2110,7 +2100,7 @@
     "feature": "苗栗縣三灣鄉崁頂寮段｜土地｜2250.9坪"
   },
   {
-    "id": 212,
+    "id": 211,
     "category": "土地廠房",
     "title": "大面寬_方正_美建地",
     "price": 1198,
@@ -2120,7 +2110,7 @@
     "feature": "苗栗縣頭份市湳湖段｜土地｜42.66坪"
   },
   {
-    "id": 213,
+    "id": 212,
     "category": "透天",
     "title": "獨戶_獨棟_大庭院_大別墅",
     "price": 2488,
@@ -2130,7 +2120,7 @@
     "feature": "苗栗縣頭份市｜4房2廳3衛｜60.64坪"
   },
   {
-    "id": 214,
+    "id": 213,
     "category": "土地廠房",
     "title": "【荷塘林境】繁星點點｜渡假浪漫小木屋",
     "price": 898,
@@ -2140,7 +2130,7 @@
     "feature": "苗栗縣頭份市尖山下段｜土地｜820.98坪"
   },
   {
-    "id": 215,
+    "id": 214,
     "category": "住宅",
     "title": "公園首購超值三房車",
     "price": 1088,
@@ -2150,7 +2140,7 @@
     "feature": "苗栗縣頭份市八德一路｜3房2廳2衛｜27.39坪"
   },
   {
-    "id": 216,
+    "id": 215,
     "category": "土地廠房",
     "title": "都計內大矽谷投資農地",
     "price": 4523,
@@ -2160,7 +2150,7 @@
     "feature": "苗栗縣頭份市山下段｜土地｜646.19坪"
   },
   {
-    "id": 217,
+    "id": 216,
     "category": "透天",
     "title": "大埔重劃區全新社區型美透天",
     "price": 2268,
@@ -2170,7 +2160,7 @@
     "feature": "苗栗縣竹南鎮科專三路｜3房3廳3衛｜62.26坪"
   },
   {
-    "id": 218,
+    "id": 217,
     "category": "透天",
     "title": "大埔電梯套房投資收租金住店滿租中",
     "price": 2700,
@@ -2180,7 +2170,7 @@
     "feature": "苗栗縣竹南鎮科專六路｜5房2廳6衛｜63.6坪"
   },
   {
-    "id": 219,
+    "id": 218,
     "category": "住宅",
     "title": "『光復路』學區旁全新高樓層三房平車美廈",
     "price": 1338,
@@ -2190,7 +2180,7 @@
     "feature": "苗栗縣竹南鎮光復路｜3房2廳2衛｜47.73坪"
   },
   {
-    "id": 220,
+    "id": 219,
     "category": "透天",
     "title": "火車站商圈鑽石金雞母住店",
     "price": 3288,
@@ -2200,7 +2190,7 @@
     "feature": "苗栗縣竹南鎮民治街｜5房2廳6衛｜91.01坪"
   },
   {
-    "id": 221,
+    "id": 220,
     "category": "土地廠房",
     "title": "竹南稀少方正美建地",
     "price": 15943,
@@ -2210,7 +2200,7 @@
     "feature": "苗栗縣竹南鎮環市段｜土地｜300.83坪"
   },
   {
-    "id": 222,
+    "id": 221,
     "category": "土地廠房",
     "title": "永貞國小旁免千萬一戶建地",
     "price": 886,
@@ -2220,7 +2210,7 @@
     "feature": "苗栗縣頭份市永貞段｜土地｜29.53坪"
   },
   {
-    "id": 223,
+    "id": 222,
     "category": "土地廠房",
     "title": "大矽谷頭份湳湖段農地加建地",
     "price": 6580,
@@ -2230,7 +2220,7 @@
     "feature": "苗栗縣頭份市湳湖段｜土地｜311.32坪"
   },
   {
-    "id": 224,
+    "id": 223,
     "category": "土地廠房",
     "title": "北河清幽農地",
     "price": 298,
