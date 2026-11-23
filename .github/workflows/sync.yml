@@ -1,26 +1,69 @@
 name: Auto Grab ibigfun
+
 on:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 0,6,12,18 * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: auto-grab-ibigfun
+  cancel-in-progress: false
+
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: |
+
+      - name: Install Playwright and Chromium
+        run: |
           pip install playwright
-          playwright install chromium
-          python grab.py
-      - run: |
-          git config user.name "bot"
-          git config user.email "bot@users.noreply.github.com"
+          playwright install --with-deps chromium
+
+      - name: Run ibigfun scraper
+        run: python grab.py
+
+      - name: Verify listings.json has at least 20 items
+        run: |
+          python - <<'EOF'
+          import json
+          import sys
+
+          with open("listings.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          if not isinstance(data, list):
+              print("❌ listings.json 格式錯誤：必須為 JSON 陣列")
+              sys.exit(1)
+
+          count = len(data)
+          print(f"🔎 提交前驗證：listings.json 共 {count} 筆（最低門檻：20 筆）")
+          if count < 20:
+              print(f"❌ 驗證失敗：listings.json 僅 {count} 筆（少於 20 筆），中止提交！")
+              sys.exit(1)
+
+          print("✅ listings.json 驗證通過")
+          EOF
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add listings.json
-          git diff --staged --quiet || (git commit -m "update listings" && git push)
+          if git diff --staged --quiet; then
+            echo "ℹ️ listings.json 無變更，略過提交。"
+          else
+            COUNT=$(python -c 'import json; print(len(json.load(open("listings.json", encoding="utf-8"))))')
+            TS=$(TZ=Asia/Taipei date '+%Y/%m/%d %H:%M:%S')
+            git commit -m "auto sync ibigfun listings (${COUNT} items · ${TS})"
+            git push
+          fi
